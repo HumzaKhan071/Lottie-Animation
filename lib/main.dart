@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: SecondPractice());
+        home: HomePage());
   }
 }
 
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage>
                     isAnimating = false;
                   });
                 } else {
-                  _controller.forward();
+                  _controller.repeat();
                   setState(() {
                     isAnimating = true;
                   });

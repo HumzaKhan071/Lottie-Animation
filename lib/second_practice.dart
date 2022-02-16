@@ -39,7 +39,7 @@ class _SecondPracticeState extends State<SecondPractice>
                     isAnimting = false;
                   });
                 } else {
-                  _controller.forward();
+                  _controller.repeat();
                   setState(() {
                     isAnimting = true;
                   });
